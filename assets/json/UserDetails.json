@@ -1,0 +1,68 @@
+{
+  "service_details": {
+    "service_type": "",
+    "service_location": "Abu Dhabi"
+  },
+  "personal_details": {
+    "full_name": "Mohammed",
+    "emirates_id": "15616516",
+    "Birthday": "06 june 1978",
+    "marital_status": "Single",
+    "gender": "male"
+  },
+  "contact_information": {
+    "primary_number": {
+      "country_code": "+971",
+      "mobile_number": "7014702611"
+    },
+    "alternate_number": {
+      "country_code": "",
+      "mobile_number": ""
+    }
+  },
+  "referral_details": {
+    "referral_number": {
+      "country_code": "",
+      "mobile_number": ""
+    },
+    "referral_name": ""
+  },
+  "family_book_details": {
+    "town": "Abu Dhabi",
+    "family_number": "15616516",
+    "number_of_wife": "1",
+    "number_of_childrens": "15616516"
+  },
+  "spouse_details": {
+    "full_name": "Mohammed",
+    "emirate_id": "15616516",
+    "nationality": "UAE",
+    "birthday": "15 September 1984"
+  },
+  "income_details": {
+    "monthly_gross_income": "AED 1681161",
+    "estimated_loan_amount": "AED 15616516"
+  },
+  "rental_property_income": [
+    {
+      "property_name": "Property 1",
+      "income": "AED 6000"
+    },
+    {
+      "property_name": "Property 2",
+      "income": "AED 6000"
+    }
+  ],
+  "employment_details": [
+    {
+      "employer_name": "SBR Industries",
+      "employement_status": "Employed",
+      "salary": "AED 10000"
+    },
+    {
+      "employer_name": "SBR Industries",
+      "employement_status": "Employed",
+      "salary": "AED 10000"
+    }
+  ]
+}
