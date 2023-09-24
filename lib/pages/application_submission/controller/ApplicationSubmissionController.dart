@@ -122,6 +122,8 @@ class ApplicationSubmissionController extends GetxController {
     required dynamic newValue,
   }) async {
     if (_connectivityController.isOnline.value) {
+
+
       try {
         String userId = await SharedPreferencesUtils.getUserId();
         await repository.updateUserData(

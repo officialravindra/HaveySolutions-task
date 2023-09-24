@@ -187,7 +187,7 @@ class BottomSheetUtils {
                     children: [
                       InkWell(
                         onTap: () {
-                          //
+
                           if (AppUtils.isNull(controller.referralName.value)) {
                             AppUtils.showSnackbar(
                                 AppUtils().getContext(),

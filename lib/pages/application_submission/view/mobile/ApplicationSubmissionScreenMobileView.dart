@@ -13,7 +13,7 @@ import '../../controller/ApplicationSubmissionController.dart';
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 //This screen is created to submit the application details.User will be able to submit the application details here.Some info will be prefilled and other will be fetch from firebase.
-//Under the class there are some widgets that has been recursively inside this screen.
+//Under the class there are some widgets that has been used recursively inside this screen.
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 class ApplicationSubmissionScreenMobileView extends StatelessWidget {
   ApplicationSubmissionScreenMobileView();
@@ -105,7 +105,7 @@ class ApplicationSubmissionScreenMobileView extends StatelessWidget {
                   buildDataTile(
                     labelText: AppStrings.alternate_contact_number,
                     valueText:
-                        controller.alternatePhoneNumberCountryCode.value +
+                    controller.alternatePhoneNumber.value == "" ? "" : controller.alternatePhoneNumberCountryCode.value +
                             controller.alternatePhoneNumber.value,
                   ),
                   SizedBox(height: Styles.kSizedBoxHeight),
@@ -121,7 +121,7 @@ class ApplicationSubmissionScreenMobileView extends StatelessWidget {
                   SizedBox(height: 10.0),
                   buildDataTile(
                     labelText: AppStrings.referral_number,
-                    valueText: controller.referralPhoneNumberCountryCode.value +
+                    valueText:  controller.referralPhoneNumber.value == "" ? "" : controller.referralPhoneNumberCountryCode.value +
                         controller.referralPhoneNumber.value,
                   ),
                   SizedBox(height: 10.0),

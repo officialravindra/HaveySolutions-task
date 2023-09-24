@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:harvery_solutions_task/routes/AppRoutes.dart';
+import 'package:harvery_solutions_task/utils/AppColors.dart';
 import 'package:harvery_solutions_task/utils/base/ConnectivityController.dart';
 
 /*-------------------------------------------------------------------------------------------------------*/
@@ -22,9 +23,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       initialBinding: BindingsBuilder(() {
         Get.put(ConnectivityController()); // Register ConnectivityController
       }),
+
       initialRoute: '/',
       routes: Routes.routes, // Use the routes from AppRoutes
 

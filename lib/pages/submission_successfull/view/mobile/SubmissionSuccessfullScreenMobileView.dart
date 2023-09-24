@@ -5,6 +5,7 @@ import 'package:harvery_solutions_task/utils/AppUtils.dart';
 
 import '../../../../utils/constants/AppDimensions.dart';
 import '../../../../widgets/alert/CustomSimpleAlertDialogueBox.dart';
+import '../../../../widgets/appbar/CustomAppBar.dart';
 import '../../../../widgets/button/SimpleButtton.dart';
 import '../../../application_submission/view/page/ApplicationSubmissionScreen.dart';
 
@@ -18,8 +19,13 @@ class SubmissionSuccessfullScreenMobileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(AppStrings.application_submitted),
+
+      appBar: CustomAppBar(
+        title: AppStrings.application_submitted,
+        showLeadingIcon: true, // Set to true to show the back arrow
+        onPressed: () {
+          Navigator.pop(context); // Example: Navigate back
+        },
       ),
       body: Center(
         child: Padding(

@@ -5,6 +5,7 @@ import 'package:harvery_solutions_task/pages/application_submission/view/mobile/
 
 import '../../../../utils/AppStrings.dart';
 import '../../../../utils/constants/AppDimensions.dart';
+import '../../../../widgets/appbar/CustomAppBar.dart';
 import '../../../../widgets/button/CustomButton.dart';
 import '../../../authentication/login/controller/LoginController.dart';
 import '../../controller/ServiceListController.dart';
@@ -21,8 +22,13 @@ class ServicesListScreenMobileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(AppStrings.pick_service),
+
+      appBar: CustomAppBar(
+        title: AppStrings.pick_service,
+        showLeadingIcon: false, // Set to true to show the back arrow
+        onPressed: () {
+          Navigator.pop(context); // Example: Navigate back
+        },
       ),
       body: Obx(
         () => ListView.builder(

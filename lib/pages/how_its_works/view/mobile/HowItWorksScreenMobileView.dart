@@ -7,6 +7,7 @@ import '../../../../routes/AppRoutes.dart';
 import '../../../../utils/AppStrings.dart';
 import '../../../../utils/AppUtils.dart';
 import '../../../../utils/constants/AppDimensions.dart';
+import '../../../../widgets/appbar/CustomAppBar.dart';
 import '../../../../widgets/button/SimpleButtton.dart';
 import '../../../application_submission/view/page/ApplicationSubmissionScreen.dart';
 
@@ -21,8 +22,14 @@ class HowItWorksScreenMobileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(AppStrings.how_its_works),
+
+
+      appBar: CustomAppBar(
+        title: AppStrings.how_its_works,
+        showLeadingIcon: true, // Set to true to show the back arrow
+        onPressed: () {
+          Navigator.pop(context); // Example: Navigate back
+        },
       ),
       body: Center(
         child: Padding(
